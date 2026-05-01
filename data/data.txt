@@ -1,0 +1,1 @@
+请从https://github.com/Split-GNN/SplitGNN下载原始数据文件并将其解压到该文件夹，使用data_preprocess .py中的代码作为参考，将数据转换为DGL格式。
