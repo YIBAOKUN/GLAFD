@@ -24,25 +24,6 @@ scipy
 pip install torch dgl torch-geometric scikit-learn numpy scipy
 ```
 
-## 项目结构
-
-- `src/` : includes all code scripts.
-  - `model.py` : Model definition of GLAFD.
-  - `train.py` : Training and evaluation script for a single dataset.
-  - `ablation.py` : Script for running ablation experiments.
-  - `utils.py` : Data loading utilities.
-  - `data_preprocess.py` : Data preprocessing script.
-- `data/` : includes original datasets.
-  - `YelpChi.zip` : The original dataset of YelpChi, which contains hotel and restaurant reviews filtered (spam) and recommended (legitimate) by Yelp.
-  - `Amazon.zip` : The original dataset of Amazon, which contains product reviews under the Musical Instruments category.
-  - `FDCompCN.zip` : The processed dataset of FDCompCN, which contains financial statement fraud of companies in China from CSMAR database.
-- `config/` : includes the setting of parameters for three datasets.
-  - `yelp.yaml` : The general parameters of YelpChi.
-  - `amazon.yaml` : The general parameters of Amazon.
-  - `comp.yaml` : The general parameters of FDCompCN.
-- `results/` : includes the results of models.
-- `README.md` : Project documentation.
-
 ## 数据集
 
 数据集文件放置于 `data/` 目录下，若 `.dgl` 文件不存在，训练时将自动调用 `data_preprocess.py` 进行预处理。
